@@ -1,0 +1,122 @@
+/* --- Global Reset & Typography --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+#course-title {
+    font-family: 'Merriweather', serif;
+}
+
+/* --- Header & Navigation (Flexbox) --- */
+header {
+    background-color: #002e5d;
+    /* BYU-Pathway inspired blue */
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    /* Requirement: forces the span to take the full width */
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    /* Ensures responsiveness on smaller screens */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #002e5d;
+}
+
+/* --- Main Content Area --- */
+main {
+    max-width: 900px;
+    /* Requirement: limited width */
+    margin: 2rem auto;
+    /* Requirement: centered horizontally */
+    padding: 0 1rem;
+    text-align: center;
+}
+
+main h1 {
+    margin-bottom: 2rem;
+    color: #002e5d;
+}
+
+/* --- Card Layout (CSS Grid) --- */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    background-color: #002e5d;
+    color: white;
+    padding: 0.5rem;
+    margin: -1.5rem -1.5rem 1rem -1.5rem;
+    border-radius: 8px 8px 0 0;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #002e5d;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+#lastModified {
+    color: #ffd700;
+    /* Distinct color for dynamic output */
+}

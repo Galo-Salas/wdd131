@@ -1,0 +1,66 @@
+/* Universal reset for consistent sizing across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Grid on the Body 
+   grid-template-rows: auto 1fr auto; means:
+   1. Header sizes to its content (auto)
+   2. Main takes up all remaining available space (1fr)
+   3. Footer sizes to its content (auto)
+*/
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #003366;
+    /* A professional, academic blue */
+    color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* CSS Flexbox applied to the navigation menu */
+nav {
+    display: flex;
+    justify-content: center;
+    /* Centers the links horizontally */
+    gap: 2rem;
+    /* Adds space between the links */
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700;
+    /* Subtle highlight on hover */
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    /* Centers the main content block */
+    width: 100%;
+}
+
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}

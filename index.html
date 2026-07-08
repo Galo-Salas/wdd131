@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Galo Salas</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals. Home page for Galo Salas, demonstrating HTML, CSS Grid/Flexbox, and foundational JavaScript.">
+    <meta name="author" content="Galo Salas">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="[Your LinkedIn URL]" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Galo Salas</h1>
+
+        <div class="card-container">
+            <section class="card">
+                <h2>About Me</h2>
+                <img src="images/profile.jpg" alt="Profile picture of Galo" width="200">
+                <p>Hello! I am Galo, a dedicated Software Development student. I thrive on discipline, high performance,
+                    and continuous learning.</p>
+            </section>
+
+            <section class="card">
+                <h2>My Location</h2>
+                <img src="images/location.jpg" alt="Scenery of Arequipa" width="200">
+                <p>I am currently studying from Arequipa, Peru.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Galo Salas | Peru </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
