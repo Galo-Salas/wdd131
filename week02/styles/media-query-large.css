@@ -1,0 +1,14 @@
+/* Styles applied ONLY when the viewport is 500px or wider */
+@media screen and (min-width: 500px) {
+    header {
+        background-color: #000000;
+        /* Black background */
+        color: #ffffff;
+        /* White text */
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        /* Shifts to a two-column grid */
+    }
+}
