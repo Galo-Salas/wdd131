@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album | WDD 131</title>
+    <meta name="description" content="A responsive picture album showcasing various temples, built for WDD 131.">
+    <meta name="author" content="Galo Salas">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 600px)">
+
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Toggle Menu">≡</button>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Featured Temples</h2>
+        <div class="res-grid">
+            <figure>
+                <img src="https://via.placeholder.com/400x300?text=Temple+1" alt="Placeholder Temple 1" loading="lazy">
+                <figcaption>Temple Name 1</figcaption>
+            </figure>
+            <figure>
+                <img src="https://via.placeholder.com/400x300?text=Temple+2" alt="Placeholder Temple 2" loading="lazy">
+                <figcaption>Temple Name 2</figcaption>
+            </figure>
+            <figure>
+                <img src="https://via.placeholder.com/400x300?text=Temple+3" alt="Placeholder Temple 3" loading="lazy">
+                <figcaption>Temple Name 3</figcaption>
+            </figure>
+            <figure>
+                <img src="https://via.placeholder.com/400x300?text=Temple+4" alt="Placeholder Temple 4" loading="lazy">
+                <figcaption>Temple Name 4</figcaption>
+            </figure>
+            <figure>
+                <img src="https://via.placeholder.com/400x300?text=Temple+5" alt="Placeholder Temple 5" loading="lazy">
+                <figcaption>Temple Name 5</figcaption>
+            </figure>
+            <figure>
+                <img src="https://via.placeholder.com/400x300?text=Temple+6" alt="Placeholder Temple 6" loading="lazy">
+                <figcaption>Temple Name 6</figcaption>
+            </figure>
+            <figure>
+                <img src="https://via.placeholder.com/400x300?text=Temple+7" alt="Placeholder Temple 7" loading="lazy">
+                <figcaption>Temple Name 7</figcaption>
+            </figure>
+            <figure>
+                <img src="https://via.placeholder.com/400x300?text=Temple+8" alt="Placeholder Temple 8" loading="lazy">
+                <figcaption>Temple Name 8</figcaption>
+            </figure>
+            <figure>
+                <img src="https://via.placeholder.com/400x300?text=Temple+9" alt="Placeholder Temple 9" loading="lazy">
+                <figcaption>Temple Name 9</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Galo Salas | Peru</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

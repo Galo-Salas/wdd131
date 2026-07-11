@@ -1,0 +1,32 @@
+/* Adjust Header and Nav for Desktop */
+header {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+header h1 {
+    margin-right: 2rem;
+}
+
+/* Hide the hamburger button on large screens */
+#menu {
+    display: none;
+}
+
+/* Transform navigation into a horizontal row */
+.navigation {
+    flex-direction: row;
+    width: auto;
+}
+
+/* Force links to display and remove mobile borders */
+.navigation a {
+    display: block;
+    border-top: none;
+    padding: 1rem 1.5rem;
+}
+
+/* Implement responsive CSS Grid for images */
+.res-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
