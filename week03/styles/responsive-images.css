@@ -1,0 +1,32 @@
+/* =========================================
+   BASE RESET
+   ========================================= */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* =========================================
+   RESPONSIVE IMAGE STYLING
+   ========================================= */
+.hero {
+    max-width: 1500px;
+    /* Prevents the image from scaling endlessly on ultra-wide monitors */
+    margin: 0 auto;
+    /* Centers the container */
+}
+
+/* This is the modern standard for responsive images.
+  It ensures the image fills its container without breaking its aspect ratio.
+*/
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Ensures the image fills the space cleanly if container dimensions vary */
+    aspect-ratio: 2 / 1;
+    /* Explicitly enforces the 2:1 ratio for modern browsers */
+    display: block;
+    /* Removes the tiny default gap below inline images */
+}

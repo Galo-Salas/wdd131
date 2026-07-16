@@ -1,0 +1,126 @@
+/* =========================================
+   1. VARIABLES (The Single Source of Truth)
+   ========================================= */
+:root {
+    --primary-color: #702963;
+    --primary-text: #ffffff;
+    /* White text fixes the WCAG contrast failure */
+    --bg-color: #f4f4f9;
+    --text-dark: #333333;
+    --font-headings: 'Roboto', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+
+    /* Variable for the datatable border activity */
+    --bord: 1px solid #777;
+}
+
+/* =========================================
+   2. BASE STYLES & TYPOGRAPHY
+   ========================================= */
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 0;
+    padding: 2rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-headings);
+}
+
+/* =========================================
+   3. LAYOUT (Advanced CSS Grid)
+   ========================================= */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-title {
+    grid-column: 1 / -1;
+    text-align: left;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+/* =========================================
+   4. COMPONENT STYLING
+   ========================================= */
+.banner {
+    background-color: var(--primary-color);
+    color: var(--primary-text);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.callout {
+    background-color: var(--primary-color);
+    color: var(--primary-text);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+/* =========================================
+   5. PSEUDO-CLASSES (Activity 1)
+   ========================================= */
+/* Anchor tags (Links) */
+a:visited,
+a:active {
+    color: navy;
+}
+
+a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+/* Datatable preventing double borders */
+.datatable {
+    border-top: var(--bord);
+    border-left: var(--bord);
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    border-bottom: var(--bord);
+    border-right: var(--bord);
+    padding: 0.5rem;
+    flex: 1;
+}
+
+/* Selecting the last row to make it darker */
+.datatable .row:last-child {
+    background-color: #ddd;
+}
+
+/* =========================================
+   6. PSEUDO-ELEMENTS (Activity 2)
+   ========================================= */
+/* Custom checkmark for ordered lists */
+ol.custom-list li::marker {
+    content: '✔️ ';
+    color: navy;
+    font-size: 2rem;
+}
+
+footer {
+    text-align: left;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
