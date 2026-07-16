@@ -1,8 +1,9 @@
-/* Custom CSS Variables for consistent color scheme */
+/* Custom CSS Variables */
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #ecf0f1;
-    --accent-color: #3498db;
+    --accent-color: #1a5276;
+    /* Darkened to pass the 4.5:1 contrast ratio against white text */
     --text-color: #333333;
     --font-heading: 'Merriweather', serif;
     --font-body: 'Roboto', sans-serif;
@@ -48,19 +49,16 @@ header h1 {
 
 #menu.open::before {
     content: "✖";
-    /* Changes to X when toggled */
 }
 
-/* Navigation - Mobile View */
-.navigation {
+nav {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.navigation a {
+nav a {
     display: none;
-    /* Hidden by default on mobile */
     padding: 1rem;
     text-align: center;
     text-decoration: none;
@@ -69,14 +67,14 @@ header h1 {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.navigation a:hover,
-.navigation a.active {
+nav a:hover,
+nav a.active {
     background-color: var(--accent-color);
     color: #ffffff;
 }
 
 /* Toggled State for Navigation */
-.navigation.open a {
+nav.open a {
     display: block;
 }
 
@@ -130,4 +128,34 @@ footer {
     text-align: center;
     padding: 1.5rem;
     margin-top: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    header h1 {
+        margin-right: 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+        width: auto;
+    }
+
+    nav a {
+        display: block;
+        border-top: none;
+        padding: 1rem 1.5rem;
+    }
+
+    .res-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
 }
