@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Place details and weather information for WDD 131">
+    <meta name="author" content="Galo">
+    <title>WDD 131 - Place</title>
+
+    <!-- Link to your CSS -->
+    <link rel="stylesheet" href="styles/place.css">
+
+    <!-- Link to your JavaScript using defer -->
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Arequipa, Peru</h1>
+    </header>
+
+    <main>
+        <!-- The hero section uses the picture element for the srcset requirement -->
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+                <img src="images/hero-small.webp" alt="Beautiful landscape of the city" width="400" height="250">
+            </picture>
+        </div>
+
+        <div class="content-grid">
+            <section class="data-card">
+                <h2>Data</h2>
+                <p><strong>Area:</strong> 1,234 sq km</p>
+                <p><strong>Population:</strong> 1,000,000</p>
+                <p><strong>Capital:</strong> Arequipa</p>
+                <p><strong>Languages:</strong> English, Spanish</p>
+            </section>
+
+            <section class="weather-card">
+                <h2 class="weather-heading">Weather</h2>
+                <!-- Mobile SVG icon -->
+                <img src="images/weather-icon.svg" alt="Partly cloudy weather icon" class="weather-icon-mobile"
+                    width="50" height="50">
+
+                <!-- Notice the span IDs. We will target these with JavaScript later. -->
+                <p><strong>Temperature:</strong> <span id="temperature">10</span> °C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> <span id="windSpeed">5</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌴 Galo 🌴 BYU-Pathway</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
