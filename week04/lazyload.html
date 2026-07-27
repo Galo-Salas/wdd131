@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Images</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1>Lazy Loading Gallery</h1>
+
+        <!-- The loading="lazy" attribute ensures images only load as they enter the viewport -->
+        <img src="https://picsum.photos/400/600?random=1" alt="Random portrait placeholder 1" width="400" height="600"
+            loading="lazy">
+        <img src="https://picsum.photos/400/600?random=2" alt="Random portrait placeholder 2" width="400" height="600"
+            loading="lazy">
+        <img src="https://picsum.photos/400/600?random=3" alt="Random portrait placeholder 3" width="400" height="600"
+            loading="lazy">
+        <img src="https://picsum.photos/400/600?random=4" alt="Random portrait placeholder 4" width="400" height="600"
+            loading="lazy">
+        <img src="https://picsum.photos/400/600?random=5" alt="Random portrait placeholder 5" width="400" height="600"
+            loading="lazy">
+        <img src="https://picsum.photos/400/600?random=6" alt="Random portrait placeholder 6" width="400" height="600"
+            loading="lazy">
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Galo Salas | BYU-Pathway Worldwide</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
