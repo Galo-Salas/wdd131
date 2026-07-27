@@ -56,7 +56,6 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // 3 Additional Temples
     {
         templeName: "Salt Lake",
         location: "Salt Lake City, Utah, United States",
@@ -86,7 +85,7 @@ const temples = [
 // DOM Selectors
 const cardsContainer = document.querySelector("#temple-cards");
 const filterTitle = document.querySelector("#filter-title");
-const mainNav = document.querySelector(".navigation");
+const mainNav = document.querySelector("nav");
 const hamburgerBtn = document.querySelector("#menu");
 
 // Function to Create and Render Temple Cards
@@ -112,7 +111,7 @@ function createTempleCard(filteredTemples) {
         let img = document.createElement("img");
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName} Temple`);
-        img.setAttribute("loading", "lazy"); // Native Lazy Loading
+        img.setAttribute("loading", "lazy");
         img.setAttribute("width", "400");
         img.setAttribute("height", "250");
 

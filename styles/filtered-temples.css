@@ -24,7 +24,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: #ffffff;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -32,15 +32,16 @@ header {
     flex-wrap: wrap;
 }
 
-header h1 {
+header span {
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 #menu {
     font-size: 1.8rem;
     background: none;
     border: none;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
     display: block;
 }
@@ -53,27 +54,28 @@ header h1 {
     content: "❌";
 }
 
-.navigation {
+/* Nav element updated to use display: flex directly */
+nav {
     display: none;
     flex-direction: column;
     width: 100%;
     margin-top: 1rem;
 }
 
-.navigation.open {
+nav.open {
     display: flex;
 }
 
-.navigation a {
-    color: white;
+nav a {
+    color: #ffffff;
     text-decoration: none;
     padding: 0.75rem 1rem;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.navigation a:hover,
-.navigation a.active {
+nav a:hover,
+nav a.active {
     background-color: var(--secondary-color);
     font-weight: bold;
 }
@@ -86,10 +88,17 @@ main {
     width: 100%;
 }
 
+main h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
 main h2 {
     text-align: center;
     margin-bottom: 1.5rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: normal;
 }
 
 .res-grid {
@@ -136,27 +145,27 @@ main h2 {
 
 footer {
     background-color: var(--primary-color);
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
     font-size: 0.9rem;
 }
 
-/* Larger screens layout */
+/* Desktop View */
 @media (min-width: 640px) {
     #menu {
         display: none;
     }
 
-    .navigation {
+    nav {
         display: flex;
         flex-direction: row;
         width: auto;
         margin-top: 0;
     }
 
-    .navigation a {
+    nav a {
         border-top: none;
         padding: 0.5rem 1rem;
         border-radius: 4px;
