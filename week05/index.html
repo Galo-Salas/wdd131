@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 5 Form Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <form action="/submit-endpoint" method="POST">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="user_first_name" required>
+
+            <label for="userEmail">Email Address:</label>
+            <input type="email" id="userEmail" name="user_email" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Career Goals</legend>
+
+            <label for="roleInterest">Desired Role:</label>
+            <select id="roleInterest" name="role_interest">
+                <option value="frontend">Front-End Developer</option>
+                <option value="backend">Back-End Developer</option>
+                <option value="fullstack">Full-Stack Developer</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Work Preferences</legend>
+
+            <p>Are you available for remote work?</p>
+            <div>
+                <input type="radio" id="remoteYes" name="remote_work" value="yes">
+                <label for="remoteYes">Yes</label>
+            </div>
+            <div>
+                <input type="radio" id="remoteNo" name="remote_work" value="no">
+                <label for="remoteNo">No</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills & Experience</legend>
+
+            <p>Select your strongest skills:</p>
+            <div>
+                <input type="checkbox" id="skillHTML" name="skills" value="html">
+                <label for="skillHTML">HTML5</label>
+            </div>
+            <div>
+                <input type="checkbox" id="skillCSS" name="skills" value="css">
+                <label for="skillCSS">CSS3</label>
+            </div>
+            <div>
+                <input type="checkbox" id="skillJS" name="skills" value="javascript">
+                <label for="skillJS">JavaScript</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <label for="userComments">Why do you want to join this project?</label>
+            <textarea id="userComments" name="user_comments" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit Application</button>
+
+    </form>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
