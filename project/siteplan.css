@@ -1,0 +1,82 @@
+/* Custom CSS Variables matching the Color Schema */
+:root {
+    --primary-blue: #2c3e50;
+    --action-green: #27ae60;
+    --bg-light: #f8f9fa;
+    --text-dark: #333333;
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Typography implementation */
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+}
+
+/* Structural Styling */
+header,
+footer {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header h1,
+header h2 {
+    color: #ffffff;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+strong {
+    color: var(--primary-blue);
+}
+
+/* Demonstrating the action color */
+a,
+.wireframe-links strong {
+    color: var(--action-green);
+}
