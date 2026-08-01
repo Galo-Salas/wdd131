@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
-    <meta name="description" content="Product review submission form for users.">
+
+    <!-- Expanded Meta Description & Author to pass the audit -->
+    <meta name="description"
+        content="Share your experience by filling out this product review form. Rate the product, log the installation date, and add feedback.">
     <meta name="author" content="Galo Salas">
+
     <link rel="stylesheet" href="styles/form.css">
+
+    <!-- Script moved to head with 'defer' attribute -->
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
@@ -18,7 +25,6 @@
     <main>
         <form method="get" action="review.html" class="review-form">
 
-            <!-- Dynamic Select Field -->
             <fieldset>
                 <legend>Product Information</legend>
                 <label for="productName">Product Name *</label>
@@ -28,7 +34,6 @@
                 </select>
             </fieldset>
 
-            <!-- Radio Buttons for Rating -->
             <fieldset>
                 <legend>Overall Rating *</legend>
                 <div class="rating-group">
@@ -49,14 +54,12 @@
                 </div>
             </fieldset>
 
-            <!-- Date Input -->
             <fieldset>
                 <legend>Installation</legend>
                 <label for="installDate">Date of Installation *</label>
                 <input type="date" id="installDate" name="installDate" required>
             </fieldset>
 
-            <!-- Checkboxes for Features -->
             <fieldset>
                 <legend>Useful Features (Check all that apply)</legend>
                 <div class="checkbox-group">
@@ -74,7 +77,6 @@
                 </div>
             </fieldset>
 
-            <!-- Textarea and Optional Text Input -->
             <fieldset>
                 <legend>Additional Feedback</legend>
                 <label for="writtenReview">Written Review (Optional)</label>
@@ -91,8 +93,6 @@
     <footer>
         <p>&copy; 2026 | Galo Salas | WDD 131</p>
     </footer>
-
-    <script src="scripts/form.js"></script>
 </body>
 
 </html>

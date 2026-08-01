@@ -127,3 +127,15 @@ textarea {
 .back-link:hover {
     text-decoration: underline;
 }
+
+/* Added Media Query for responsive design compliance */
+@media screen and (min-width: 768px) {
+    main {
+        padding: 3rem;
+    }
+
+    .submit-btn {
+        font-size: 1.3rem;
+        padding: 1.2rem;
+    }
+}
